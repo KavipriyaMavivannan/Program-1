@@ -1,0 +1,21 @@
+package com.kavipriya;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main( String[] args) {
+    Scanner in = new Scanner(System.in);
+    String d=in.nextInt();
+    char a[]=d.toCharArray();
+    for(int i=0;i<d.length();i++){
+       for(int j=i+1;i<d.length();j++){
+          if (a[i]==a[j]){
+            System.out.print(" "+a[j]);
+             break;
+         }
+       }
+     }
+         
+  }
+}
